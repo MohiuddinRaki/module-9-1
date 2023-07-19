@@ -11,7 +11,7 @@ header{
 .nav-tittle{
     color: #131313;
     font-size: 2.8rem;
-    font-weight: 700pxS;
+    font-weight: 700px;
      
 
 }
@@ -52,4 +52,69 @@ nav li a{
     color: #727272;
 
 }
+.btn{
+    color: #FFF;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
 
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+@media  screen and (max-width: 576px){
+    .header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 576px)
+and (max-width: 960px){
+    .header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}  
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.team-conrainer{
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.team-tittle{
+   font-size: 2.8rem;
+   padding-right: 360px;
+
+}
+.quick{
+    color: #727272;
+    font-weight: 500px;
+
+}
+.our{
+    color: #131313;
+    font-weight: 700px;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700px;
+}
+.team-description{
+    padding-right: 250px;
+}
