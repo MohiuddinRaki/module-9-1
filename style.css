@@ -8,7 +8,7 @@ header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-.nav-tittle{
+.nav-tittle, .facts{
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700px;
@@ -48,7 +48,7 @@ nav li a{
       
 
 }
-.benner-description{
+.banner-descripton{
     color: #727272;
 
 }
@@ -66,29 +66,11 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
-@media  screen and (max-width: 576px){
-    .header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-@media screen and (min-width: 576px)
-and (max-width: 960px){
-    .header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
-}  
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
-.team-conrainer{
+.team-container{
     display: flex;
     align-items: center;
     gap: 76px;
@@ -96,10 +78,13 @@ main{
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 24px;
 }
+/* .team-content{ */
+
 .team-tittle{
    font-size: 2.8rem;
-   padding-right: 360px;
+   padding-right: 289px;
 
 }
 .quick{
@@ -115,6 +100,179 @@ main{
     color: #FF900E;
     font-weight: 700px;
 }
-.team-description{
-    padding-right: 250px;
+.text-light-gray{
+    padding-right: 200px;
+    color: #727272;
 }
+.facts-description{
+    color: #727272;
+
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 30px;  
+}
+.card{
+    border: 2px solid #FF900E;
+    border-radius: 5px;
+    text-align: center;
+}
+.card-states{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+.card-title{
+    font-weight: 600;
+  
+    margin-top: 5px;
+}
+.sponsors{
+    text-align: center;
+}
+.section-description{
+   color: #727272;
+}
+.sponsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+.sponsor-img-container img{
+    width: 165px;
+    
+}
+.feature{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px; 
+}
+
+.feature-title{
+    color: #131313;
+    font-family: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+ }
+
+ .feature-img img{
+    margin-left: 100px;
+}
+
+/* .feature-description{
+    color: #727272;
+    font-weight: 400;
+} */
+
+.ten-years{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF; 
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    
+    /* height: 100px; */
+}
+
+.ten-years h2{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years p{
+    font-size: 1.5rem;
+}
+
+
+
+
+.cards{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0.06); 
+}
+ 
+/* .cards-1{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+} */
+
+/* .cards-1-2{
+    color: #727272;
+    font-weight: 400;
+} */
+
+/* small device */
+@media  screen and (max-width: 576px){
+    .header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .team-container{
+        flex-direction: column;
+    }
+    .team-img-container{
+       grid-template-columns: 1fr;
+
+    }
+    .team-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card-container{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px; 
+    
+    }
+    .sponsor-img-container{
+        flex-direction: column;
+    }
+    .ten-years{
+        position: static;
+        max-width: 300px;
+    }
+
+
+    .feature-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+
+}
+    
+/* medium device */
+@media screen and (min-width: 576px)
+and (max-width: 960px){
+    .header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .team-container{
+        flex-direction: column;
+    
+}  
+.sponsor-img-container{
+    flex-direction: column;
+   
+
+}
+
+}
+   
